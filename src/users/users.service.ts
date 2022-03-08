@@ -28,7 +28,7 @@ export class UsersService {
     return this.userModel.findByIdAndUpdate({
       _id: id
     },{
-      updateUserDto
+      $set: updateUserDto
     },{
       new: true
     });
